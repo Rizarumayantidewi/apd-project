@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="io.kodular.egeguvener0808.MapPoint"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:theme="@ref/0x7f0b009d"
+        android:label="LoginSignUI"
+        android:icon="@ref/0x7f030000"
+        android:name="com.google.appinventor.components.runtime.multidex.MultiDexApplication"
+        android:debuggable="false"
+        android:supportsRtl="false"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f080000"
+        android:roundIcon="@ref/0x7f030000"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:theme="@ref/0x7f0b00a0"
+            android:name="io.kodular.egeguvener0808.MapPoint.Screen1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0b00a0"
+            android:name="io.kodular.egeguvener0808.MapPoint.Main"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0b00a0"
+            android:name="io.kodular.egeguvener0808.MapPoint.SignIn"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.kodular.app.VERSION"
+            android:value="1.5.2-Fenix" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="io.kodular.egeguvener0808.MapPoint.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f080001" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+</manifest>
